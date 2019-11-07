@@ -27,12 +27,18 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+    <div>
+      <edge-checkbox title="test"/>
+    </div>
   </div>
 </template>
 
 <script>
+import EdgeCheckbox from './edgeCheckbox'
 export default {
   name: 'HelloWorld',
+  components: { EdgeCheckbox },
   props: {
     msg: String
   }
