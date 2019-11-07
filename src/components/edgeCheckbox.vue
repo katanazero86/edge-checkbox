@@ -10,6 +10,8 @@
     }
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
+  @import '../assets/scss/variable/edgeVariable';
 
 </style>

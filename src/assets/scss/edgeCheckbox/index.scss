@@ -1,0 +1,68 @@
+@import '../variable/edgeVariable';
+
+
+// prefix : edge-checkbox
+
+.edge-checkbox-flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.edge-checkbox-flex-container-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.edge-checkbox-flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.edge-checkbox-flex-container-align-start {
+  align-items: flex-start;
+}
+
+.edge-checkbox-flex-container-align-end {
+  align-items: flex-end;
+}
+
+.edge-checkbox-flex-container-align-center {
+  align-items: center;
+}
+
+.edge-checkbox-flex-container-justify-start {
+  justify-content: flex-start;
+}
+
+.edge-checkbox-flex-container-justify-end {
+  justify-content: flex-end;
+}
+
+.edge-checkbox-flex-container-justify-center {
+  justify-content: center;
+}
+
+.edge-checkbox-flex-container-justify-between {
+  justify-content: space-between;
+}
+
+.edge-checkbox-flex-container-justify-around {
+  justify-content: space-around;
+}
+
+.edge-checkbox-pa-1 {
+  padding : 2px;
+}
+
+.edge-checkbox-pa-2 {
+  padding : 4px;
+}
+
+.edge-checkbox-pa-3 {
+  padding : 6px;
+}
+
+.edge-checkbox-pa-4 {
+  padding : 8px;
+}
