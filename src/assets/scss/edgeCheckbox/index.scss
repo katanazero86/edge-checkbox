@@ -68,7 +68,46 @@
 }
 
 
+input[type=checkbox] {
+  margin-left: 0;
+  padding: 0;
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
 
 .edge-checkbox-check-icon {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  padding-right: 5px;
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
 
+input[type=checkbox]:checked + .edge-checkbox-check-icon {
+  display: flex;
+  align-items: center;
+  color: $gray;
+  padding-right: 5px;
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+label > span {
+  font-size: $normal-font-size;
+}
+
+
+// disabled
+.edge-checkbox-disabled {
+  cursor: not-allowed;
+  opacity: $disabled-opacity;
 }

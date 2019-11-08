@@ -1,7 +1,7 @@
 <template>
   <div class="edge-checkbox-flex-container-row edge-checkbox-flex-container-align-center">
-    <label class="edge-checkbox-flex-container-row edge-checkbox-flex-container-align-center">
-      <input type="checkbox" :name="name" :id="id" :value="value">
+    <label class="edge-checkbox-flex-container-row edge-checkbox-flex-container-align-center" :class="[disabled ? 'edge-checkbox-disabled' : '']">
+      <input type="checkbox" :name="name" :id="id" :value="value" :disabled="disabled" :checked="checked">
       <div class="edge-checkbox-check-icon">
         <template v-if="strokeLight">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -23,7 +23,6 @@
         </template>
       </div>
       <span>{{title}}</span>
-
     </label>
   </div>
 </template>
@@ -36,6 +35,7 @@ export default {
     name: { type: String, default: '' },
     value: { type: [String, Number], default: '' },
     checked: { type: Boolean, default: false },
+    disabled: { type: Boolean, default: false },
     strokeLight: { type: Boolean, default: false },
     strokeBold: { type: Boolean, default: false },
     title: { type: String, default: '' },
@@ -48,33 +48,5 @@ export default {
 <style lang="scss" src="../assets/scss/edgeCheckbox/index.scss"></style>
 <style lang="scss" scoped>
   @import '../assets/scss/variable/edgeVariable';
-
-  input[type=checkbox] {
-    margin-left: 0;
-    padding: 0;
-    display: none;
-  }
-
-  label {
-    cursor: pointer;
-  }
-
-  //normal size
-
-  .edge-checkbox-check-icon {
-    color: $gray;
-    svg {
-      width: 15px;
-      height: 15px;
-    }
-  }
-
-  input[type=checkbox]:checked + .edge-checkbox-check-icon {
-    color: white;
-    svg {
-      width: 15px;
-      height: 15px;
-    }
-  }
 
 </style>
