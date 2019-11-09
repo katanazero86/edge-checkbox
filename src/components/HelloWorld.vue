@@ -1,38 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <!--<p>-->
-      <!--For a guide and recipes on how to configure / customize this project,<br>-->
-      <!--check out the-->
-      <!--<a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.-->
-    <!--</p>-->
-    <!--<h3>Installed CLI Plugins</h3>-->
-    <!--<ul>-->
-      <!--<li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>-->
-      <!--<li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>-->
-    <!--</ul>-->
-    <!--<h3>Essential Links</h3>-->
-    <!--<ul>-->
-      <!--<li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>-->
-      <!--<li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>-->
-      <!--<li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>-->
-      <!--<li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>-->
-      <!--<li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>-->
-    <!--</ul>-->
-    <!--<h3>Ecosystem</h3>-->
-    <!--<ul>-->
-      <!--<li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>-->
-      <!--<li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>-->
-      <!--<li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>-->
-      <!--<li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>-->
-      <!--<li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>-->
-    <!--</ul>-->
-
     <div>
       <edge-checkbox title="test"/>
       <edge-checkbox title="disabled test" :disabled="true" />
       <edge-checkbox title="small test" size="small" />
       <edge-checkbox title="large test" size="large" />
+      <hr>
+      <edge-checkbox title="stroke bold" :stroke-bold="true" />
+      <edge-checkbox title="stroke bold + large" :stroke-bold="true" size="large" />
+      <edge-checkbox title="stroke light" :stroke-light="true" />
+      <edge-checkbox title="stroke light + small" :stroke-light="true" size="small" />
+      <hr>
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <edge-checkbox title="color test" color="primary"/>
+        <edge-checkbox title="color test" color="primary-light"/>
+        <edge-checkbox title="color test" color="primary-dark"/>
+      </div>
     </div>
   </div>
 </template>
