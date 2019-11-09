@@ -2,6 +2,7 @@
   "name": "@zero86/vue-edge-checkbox",
   "version": "0.1.1",
   "private": false,
+  "license": "MIT",
   "main": "dist/vue-edge-checkbox.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
