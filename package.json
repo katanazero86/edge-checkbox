@@ -1,6 +1,6 @@
 {
   "name": "@zero86/vue-edge-checkbox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "license": "MIT",
   "description": "vue checkbox component",
