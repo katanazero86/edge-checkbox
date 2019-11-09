@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import EdgeCheckbox from './edgeCheckbox'
+import EdgeCheckbox from './EdgeCheckbox'
 export default {
   name: 'HelloWorld',
   components: { EdgeCheckbox },

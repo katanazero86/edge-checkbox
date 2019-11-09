@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'edgeCheckbox',
+  name: 'EdgeCheckbox',
   props: {
     id: { type: String, default: '' },
     name: { type: String, default: '' },
