@@ -52,7 +52,7 @@ In case of value, it returns the value set according to the check operation.(ret
 import Vue from 'vue'
 import EdgeCheckbox from '@zero86/vue-edge-checkbox'
 
-import '@zero86/vue-npm-example/dist/vue-edge-checkbox.css'
+import '@zero86/vue-edge-checkbox/dist/vue-edge-checkbox.css'
 Vue.use(EdgeCheckbox)
 
 ```
