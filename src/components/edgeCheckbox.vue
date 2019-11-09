@@ -55,7 +55,17 @@ export default {
 
   methods: {
     onChange (e) {
-      console.log(e.target.checked)
+      if (this.returnMode === 'checked') {
+        this.$emit('change', e.target.checked)
+      }
+
+      if (this.returnMode === 'value') {
+        if (e.target.checked) {
+          this.$emit('change', e.target.value)
+        } else {
+          this.$emit('change', null)
+        }
+      }
     }
   }
 

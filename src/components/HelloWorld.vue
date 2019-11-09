@@ -42,6 +42,16 @@
         <edge-checkbox title="color indigo-light" color="indigo-light"/>
         <edge-checkbox title="color indigo-dark" color="indigo-dark"/>
       </div>
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <edge-checkbox title="color indigo + get value(true/false)" color="indigo" name="testValue" v-model="testValue"/>
+        <div style="font-weight: 600">
+          {{testValue}}
+        </div>
+        <edge-checkbox title="color indigo-light + get value(setting value)" color="indigo-light" value="so cool!" name="testValue2" v-model="testValue2" return-mode="value"/>
+        <div style="font-weight: 600">
+          {{testValue2}}
+        </div>
+      </div>
 
     </div>
   </div>
@@ -54,6 +64,13 @@ export default {
   components: { EdgeCheckbox },
   props: {
     msg: String
+  },
+
+  data () {
+    return {
+      testValue: false,
+      testValue2: null
+    }
   }
 }
 </script>
