@@ -6,7 +6,11 @@
   "description": "vue checkbox component",
   "author": {
     "name" : "zero86",
-    "url" : "https://github.com/katanazero86/edge-checkbox",
+    "url" : "https://github.com/katanazero86/edge-checkbox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katanazero86/edge-checkbox"
   },
   "main": "dist/vue-edge-checkbox.common.js",
   "scripts": {
