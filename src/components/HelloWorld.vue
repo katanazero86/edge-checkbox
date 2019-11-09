@@ -51,6 +51,7 @@
         <div style="font-weight: 600">
           {{testValue2}}
         </div>
+        <edge-checkbox title="checked" color="indigo-light" :checked="true"/>
       </div>
 
     </div>
