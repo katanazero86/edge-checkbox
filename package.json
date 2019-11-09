@@ -1,8 +1,13 @@
 {
   "name": "@zero86/vue-edge-checkbox",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "license": "MIT",
+  "description": "vue checkbox component",
+  "author": {
+    "name" : "zero86",
+    "url" : "https://github.com/katanazero86/edge-checkbox",
+  },
   "main": "dist/vue-edge-checkbox.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
