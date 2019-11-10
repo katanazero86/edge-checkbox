@@ -48,6 +48,12 @@ In case of value, it returns the value set according to the check operation.(ret
 
 ### npm install & use
 
+- Install
+```
+npm install --save @zero86/vue-edge-checkbox
+```
+
+- Register the component
 ```
 import Vue from 'vue'
 import EdgeCheckbox from '@zero86/vue-edge-checkbox'
@@ -57,10 +63,15 @@ Vue.use(EdgeCheckbox)
 
 ```
 
+- use component
+```
+<edge-checkbox title="agree" v-model="agreeFlag"/>
+```
+
 ### example code
 ```
 
- <div>
+ <div>  
       <edge-checkbox title="test"/>
       <edge-checkbox title="disabled test" :disabled="true" />
       <edge-checkbox title="small test" size="small" />
