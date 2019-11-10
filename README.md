@@ -1,5 +1,14 @@
 # edge-checkbox
 
+```
+Hi? my name is zero86.
+I'm a developer making money with vue. 
+Deploy the checkbox component. 
+I hope others will save you time and if you have a problem please track the GitHub issue! 
+Thank you.
+```
+
+
 ### props list
 ```
 props: {
