@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/katanazero86/edge-checkbox"
   },
+  "keywords": ["checkbox", "vue", "vuejs", "vue checkbox"],
   "main": "dist/vue-edge-checkbox.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
