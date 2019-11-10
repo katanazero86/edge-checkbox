@@ -79,7 +79,6 @@ Vue.use(EdgeCheckbox)
 
 ### example code
 ```
-
  <div>  
       <edge-checkbox title="test"/>
       <edge-checkbox title="disabled test" :disabled="true" />
@@ -134,3 +133,8 @@ Vue.use(EdgeCheckbox)
       </div>
       
 ```
+
+---
+
+![example](./img/example.PNG)
+
