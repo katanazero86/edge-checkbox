@@ -156,4 +156,4 @@ Vue.use(EdgeCheckbox)
 
 ![example](./img/example.PNG)
 
-![example2](./img/add fill.PNG)
+![example2](img/addfill.PNG)
