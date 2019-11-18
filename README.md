@@ -22,7 +22,8 @@ props: {
     title: { type: String, default: '' },
     size: { type: String, default: '' },
     color: { type: String, default: '' },
-    returnMode: { type: String, default: 'checked' }
+    returnMode: { type: String, default: 'checked' },
+    fill : {type : Boolean, default : false }
 },
 
 color 
@@ -52,6 +53,10 @@ returnMode
 This property sets the return value.
 If checked, returns true / false based on the cheke action.
 In case of value, it returns the value set according to the check operation.(returns null if check is off)
+
+fill
+- true
+- false (default)
 
 ```
 
