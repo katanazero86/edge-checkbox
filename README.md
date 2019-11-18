@@ -6,6 +6,9 @@ I'm a developer making money with vue.
 Deploy the checkbox component. 
 I hope others will save you time and if you have a problem please track the GitHub issue! 
 Thank you.
+
+2019.11.18
+fill feature add
 ```
 
 
@@ -136,6 +139,16 @@ Vue.use(EdgeCheckbox)
         </div>
         <edge-checkbox title="checked" color="indigo-light" :checked="true"/>
       </div>
+      <hr>
+            <edge-checkbox fill title="fill mode" />
+            <edge-checkbox fill title="fill mode + primary" color="primary" />
+            <edge-checkbox fill title="fill mode + primary + large" color="primary" size="large"/>
+            <edge-checkbox fill title="fill mode + primary + small" color="primary" size="small" />
+            <edge-checkbox fill title="fill mode + primary + disabled" color="primary" disabled />
+            <edge-checkbox fill title="fill mode + violet-dark" color="violet-dark" />
+            <div style="background-color: #e6e6e6">
+              <edge-checkbox fill title="fill mode + violet-dark" color="violet-dark" />
+            </div>
       
 ```
 
@@ -143,3 +156,4 @@ Vue.use(EdgeCheckbox)
 
 ![example](./img/example.PNG)
 
+![example2](./img/add fill.PNG)
