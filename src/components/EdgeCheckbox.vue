@@ -5,7 +5,6 @@
     size && `edge-checkbox-${size}`,
     color && `edge-checkbox-${color}`,
     fill && `edge-checkbox-fill`,
-    fillBorderColor && `edge-checkbox-fill-${fillBorderColor}`
     ]">
       <input type="checkbox" :name="name" :id="id" :value="value" :disabled="disabled" :checked="checked" @change="onChange">
       <div class="edge-checkbox-check-icon">
