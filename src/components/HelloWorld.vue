@@ -15,6 +15,7 @@
       <edge-checkbox title="stroke light + small" :stroke-light="true" size="small" />
       <edge-checkbox title="stroke light + small + color" :stroke-light="true" size="small" color="indigo"/>
       <edge-checkbox title="stroke light + small + color + disabled" :stroke-light="true" size="small" color="indigo" :disabled="true"/>
+      <edge-checkbox title="stroke light + small + color + disabled + checked" :stroke-light="true" size="small" color="indigo" disabled checked />
       <hr>
       <div style="display: flex; flex-direction: row; align-items: center">
         <edge-checkbox title="color primary" color="primary"/>
@@ -53,7 +54,16 @@
         </div>
         <edge-checkbox title="checked" color="indigo-light" :checked="true"/>
       </div>
-
+      <hr>
+      <edge-checkbox fill title="fill mode" />
+      <edge-checkbox fill title="fill mode + primary" color="primary" />
+      <edge-checkbox fill title="fill mode + primary + large" color="primary" size="large"/>
+      <edge-checkbox fill title="fill mode + primary + small" color="primary" size="small" />
+      <edge-checkbox fill title="fill mode + primary + disabled" color="primary" disabled />
+      <edge-checkbox fill title="fill mode + violet-dark" color="violet-dark" />
+      <div style="background-color: #e6e6e6">
+        <edge-checkbox fill title="fill mode + violet-dark" color="violet-dark" />
+      </div>
     </div>
   </div>
 </template>

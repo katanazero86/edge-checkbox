@@ -3,7 +3,9 @@
     <label class="edge-checkbox-flex-container-row edge-checkbox-flex-container-align-center" :class="[
     disabled && 'edge-checkbox-disabled',
     size && `edge-checkbox-${size}`,
-    color && `edge-checkbox-${color}`
+    color && `edge-checkbox-${color}`,
+    fill && `edge-checkbox-fill`,
+    fillBorderColor && `edge-checkbox-fill-${fillBorderColor}`
     ]">
       <input type="checkbox" :name="name" :id="id" :value="value" :disabled="disabled" :checked="checked" @change="onChange">
       <div class="edge-checkbox-check-icon">
@@ -32,6 +34,10 @@
 </template>
 
 <script>
+
+const colorValueArray = ['primary-light', 'primary', 'primary-dark', 'red-light', 'red', 'red-dark', 'lime-light', 'lime', 'lime-dark', 'violet-light', 'violet', 'violet-dark', 'indigo-light', 'indigo', 'indigo-dark']
+const sizeValueArray = ['small', 'large']
+
 export default {
   name: 'EdgeCheckbox',
   props: {
@@ -43,9 +49,34 @@ export default {
     strokeLight: { type: Boolean, default: false },
     strokeBold: { type: Boolean, default: false },
     title: { type: String, default: '' },
-    size: { type: String, default: '' },
-    color: { type: String, default: '' },
-    returnMode: { type: String, default: 'checked' }
+    size: { type: String,
+      default: '',
+      validator: function (sizeValue) {
+        if (sizeValue === '') {
+          return true
+        } else {
+          return sizeValueArray.indexOf(sizeValue) !== -1
+        }
+      } },
+    color: { type: String,
+      default: '',
+      validator: function (colorValue) {
+        if (colorValue === '') {
+          return true
+        } else {
+          return colorValueArray.indexOf(colorValue) !== -1
+        }
+      } },
+    returnMode: { type: String, default: 'checked' },
+    fill: { type: Boolean,
+      default: false,
+      validator: function (fillValue) {
+        if (typeof fillValue !== 'boolean') {
+          return false
+        } else {
+          return true
+        }
+      } }
   },
 
   model: {
