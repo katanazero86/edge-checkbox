@@ -11,6 +11,8 @@ Thank you.
 fill feature add
 ```
 
+https://www.npmjs.com/package/@zero86/vue-edge-checkbox
+
 
 ### props list
 ```
